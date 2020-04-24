@@ -50,7 +50,8 @@ dev.db
 # Intellij IDEA based IDEs folder
 .idea/**
 
-# Pytest cache
+# Py cache
+__pycache__
 .pytest_cache/**
 
 # Vagrant machines
