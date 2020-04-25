@@ -4,10 +4,10 @@
 import pytest
 from webtest import TestApp
 
-from conduit.app import create_app
-from conduit.database import db as _db
-from conduit.settings import TestConfig
-from conduit.profile.models import UserProfile
+from sayso.app import create_app
+from sayso.database import db as _db
+from sayso.settings import TestConfig
+from sayso.profile.models import UserProfile
 
 
 from .factories import UserFactory

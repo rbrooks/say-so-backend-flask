@@ -100,7 +100,7 @@ class TestArticleViews:
         assert resp.json['article']['body'] == 'You have to believe'
 
     def test_make_comment_correct_schema(self, testapp, user):
-        from conduit.profile.serializers import profile_schema
+        from sayso.profile.serializers import profile_schema
         user = user.get()
         resp = testapp.post_json(url_for('user.login_user'), {'user': {
             'email': user.email,

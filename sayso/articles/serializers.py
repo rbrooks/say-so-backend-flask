@@ -2,7 +2,7 @@
 
 from marshmallow import Schema, fields, pre_load, post_dump
 
-from conduit.profile.serializers import ProfileSchema
+from sayso.profile.serializers import ProfileSchema
 
 
 class TagSchema(Schema):

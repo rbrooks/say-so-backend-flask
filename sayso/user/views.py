@@ -5,9 +5,9 @@ from flask_apispec import use_kwargs, marshal_with
 from flask_jwt_extended import jwt_required, jwt_optional, create_access_token, current_user
 from sqlalchemy.exc import IntegrityError
 
-from conduit.database import db
-from conduit.exceptions import InvalidUsage
-from conduit.profile.models import UserProfile
+from sayso.database import db
+from sayso.exceptions import InvalidUsage
+from sayso.profile.models import UserProfile
 from .models import User
 from .serializers import user_schema
 

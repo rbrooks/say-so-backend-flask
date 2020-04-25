@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Test configs."""
-from conduit.app import create_app
-from conduit.settings import DevConfig, ProdConfig
+from sayso.app import create_app
+from sayso.settings import DevConfig, ProdConfig
 
 
 def test_production_config():

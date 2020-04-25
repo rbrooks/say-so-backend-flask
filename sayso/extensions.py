@@ -43,7 +43,7 @@ migrate = Migrate()
 cache = Cache()
 cors = CORS()
 
-from conduit.utils import jwt_identity, identity_loader  # noqa
+from sayso.utils import jwt_identity, identity_loader  # noqa
 
 jwt = JWTManager()
 jwt.user_loader_callback_loader(jwt_identity)

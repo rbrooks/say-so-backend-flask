@@ -2,8 +2,8 @@
 """User models."""
 import datetime as dt
 
-from conduit.database import Column, Model, SurrogatePK, db
-from conduit.extensions import bcrypt
+from sayso.database import Column, Model, SurrogatePK, db
+from sayso.extensions import bcrypt
 
 
 class User(SurrogatePK, Model):

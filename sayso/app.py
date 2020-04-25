@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """The app module, containing the app factory function."""
 from flask import Flask
-from conduit.extensions import bcrypt, cache, db, migrate, jwt, cors
+from sayso.extensions import bcrypt, cache, db, migrate, jwt, cors
 
-from conduit import commands, user, profile, articles
-from conduit.settings import ProdConfig
-from conduit.exceptions import InvalidUsage
+from sayso import commands, user, profile, articles
+from sayso.settings import ProdConfig
+from sayso.exceptions import InvalidUsage
 
 
 def create_app(config_object=ProdConfig):

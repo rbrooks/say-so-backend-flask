@@ -1,6 +1,6 @@
 from flask_jwt_extended import current_user
 
-from conduit.database import (Model, SurrogatePK, db,
+from sayso.database import (Model, SurrogatePK, db,
                               reference_col, relationship)
 
 
