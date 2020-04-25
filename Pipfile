@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 werkzeug = "*"
-sqlalchemy = "==1.2.9"
+sqlalchemy = "*"
 click = "*"
 marshmallow = "*"
 flask-apispec = "*"
@@ -31,3 +31,6 @@ Faker = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+test = "pytest tests"

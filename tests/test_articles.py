@@ -132,4 +132,7 @@ class TestArticleViews:
         # check
         authorp = resp.json['comment']['author']
         del authorp['following']
-        assert profile_schema.dump(user).data['profile'] == authorp
+        assert profile_schema.dump(user).data['profile'] == authorp # Fails in Shell
+        # assert profile_schema.dump(user)['profile'] == authorp    # Fails in VSCode
+        # Yet env is the same in both:
+        # darwin -- Python 3.7.4, pytest-5.4.1, py-1.8.1, pluggy-0.13.1

@@ -49,7 +49,7 @@ pyenv global 3.7.2
 Set the ``FLASK_APP`` and ``FLASK_DEBUG`` env var:
 
 ```bash
-    export FLASK_APP=/path/to/your/autoapp.py
+    export FLASK_APP=autoapp.py
     export FLASK_DEBUG=1
 ```
 
@@ -63,7 +63,8 @@ CD into this app's root directory and:
 
 ```bash
     pipenv --python 3.7.4 # Change to your python version. Sets up Virt Env.
-    pipenv install --dev
+    pipenv sync --dev     # Best to install only what's in pipfile.lock.
+                          # Those are the versions that work.
     pipenv run db init
     pipenv run db migrate
     pipenv run db upgrade
@@ -72,12 +73,12 @@ CD into this app's root directory and:
 Start the web server:
 
 ```bash
-    pipenv run flask run --port 3000 --with-threads
+    pipenv run flask run --with-threads
 ```
 
-The frontend makes REST calls to this and expects Port 3000.
+The frontend makes REST calls to this and expects Port 5000.
 
-* Service should now be browseable at: http://localhost:3000/
+* Service should now be requestable via CURL or HTTPie at: http://localhost:5000
 
 ## Screenshots
 
