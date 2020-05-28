@@ -1,4 +1,4 @@
-# SaySo Backend: Flask
+# SaySo Backend: Flask MicroService
 
 ## Overview
 
@@ -80,9 +80,9 @@ The frontend makes REST calls to this and expects Port 5000.
 
 * Service should now be requestable via CURL or HTTPie at: http://localhost:5000
 
-## Screenshots
+## Routes
 
-coming
+![ss-flask-routes](https://user-images.githubusercontent.com/214047/83106213-11a24680-a08a-11ea-8fbe-3652506bcf5a.png)
 
 ## Deployment
 
