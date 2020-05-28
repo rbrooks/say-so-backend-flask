@@ -2,7 +2,7 @@
 
 ## Overview
 
-A functioning hobby project to bring my Python and Flask skills up to date. The is the Microservice half of a single-page blogging platform.
+A functioning hobby project to bring my Python and Flask skills up to date. The is the Microservice half of a blogging platform.
 
 This project has:
 
