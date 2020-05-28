@@ -62,6 +62,14 @@ def update_article(slug, **kwargs):
     article = Article.query.filter_by(slug=slug, author_id=current_user.profile.id).first()
     if not article:
         raise InvalidUsage.article_not_found()
+
+    if kwargs['tagList'] is not None:
+        for tag in kwargs['tagList']:
+            mtag = Tags.query.filter_by(tagname=tag).first()
+            if not mtag:
+                mtag = Tags(tag)
+                mtag.save()
+            article.add_tag(mtag)
     article.update(updatedAt=dt.datetime.utcnow(), **kwargs)
     article.save()
     return article
