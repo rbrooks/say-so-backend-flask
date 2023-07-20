@@ -1,33 +1,31 @@
 [[source]]
-url = "https://pypi.org/simple"
+url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
-werkzeug = "*"
-sqlalchemy = "*"
 click = "*"
-marshmallow = "*"
+flask = "*"
 flask-apispec = "*"
-unicode-slugify = "*"
-"psycopg2" = "*"
+flask-bcrypt = "*"
+flask-caching = "*"
+flask-cors = "*"
+flask-jwt-extended = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
 gunicorn = "*"
-Flask-Caching = "*"
-Flask-SQLAlchemy = "*"
-Flask-Bcrypt = "*"
-Flask = "*"
-PyJWT = "*"
-Flask-JWT-Extended = "*"
-Flask-Migrate = "*"
-Flask-Cors = "*"
+marshmallow = "*"
+# psycopg2 = "*"
+pyjwt = "*"
+sqlalchemy = "*"
+unicode-slugify = "*"
+werkzeug = "*"
 
 [dev-packages]
-# Testing
-pytest = "*"
-WebTest = "*"
 factory-boy = "*"
-# For python 3
-Faker = "*"
+faker = "*"
+pytest = "*"
+webtest = "*"
 
 [requires]
 python_version = "3.7"
